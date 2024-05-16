@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2e7086;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+.content{
+    width: 100%;
+    max-width: 700px;
+    min-height: 500px;
+    padding: 50px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    position: relative;
+    background: #fff;
+    /* transform: translate(50%, 50%); */
+    border-radius: 20px;
+    
+    
+
+}
+
+.tag{
+    padding: 7px 15px;
+    border: 1px solid #008cff;
+    color: #2777e0;
+    border-radius: 8px;
+    display: inline-block;
+    top: 70%;
+    background: #fff;
+    left: 40%;
+}
+#tagBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.active{
+    background: #008cff;
+    color: #fff;
+}
+
+#Quote-Display{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    min-height: 200px;
+    background: #ebebeb;
+    text-align: center;
+    font-size: 28px;
+}
+
+#Quote-Display::before, #Quote-Display::after{
+    /* content: '"'; */
+}
+
+#tags{
+    margin-top: 50px;
+}
+
+#quotebtn{
+    padding: 10px 20px;
+    background: #008cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    display: inline-block;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.author{
+    margin-top: 15px;
+    position: relative;
+    text-align: right;
+    width: fit-content;
+    margin-left: auto;
+
+
+}
+.author::before{
+    content: "";
+    width: 20px;
+    height: 1.5px;
+    background:#000000;
+    position: absolute;
+    top: 50%;
+
+    right: calc(100% + 10px) ;
+}
