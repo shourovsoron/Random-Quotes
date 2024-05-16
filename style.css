@@ -7,7 +7,6 @@
 body{
     background: #2e7086;
     width: 100%;
-    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
     min-height: 200px;
     background: #ebebeb;
@@ -70,24 +69,29 @@ body{
     /* content: '"'; */
 }
 
-#tags{
+/* #tags{
     margin-top: 50px;
-}
+} */
 
 #quotebtn{
     padding: 10px 20px;
     background: #008cff;
     color: #fff;
+    display: block;
     border: none;
     border-radius: 8px;
-    position: absolute;
-    display: inline-block;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
 }
 
+#quotebtn:hover{
+    background: #03b8ff;
+    color: #fff;
+
+}
 .author{
     margin-top: 15px;
     position: relative;
@@ -97,6 +101,7 @@ body{
 
 
 }
+
 .author::before{
     content: "";
     width: 20px;
@@ -106,4 +111,23 @@ body{
     top: 50%;
 
     right: calc(100% + 10px) ;
+}
+
+.socila-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+
+}
+.socila-media p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.socila-media .social{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
 }
